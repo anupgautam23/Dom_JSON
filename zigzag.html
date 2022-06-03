@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=], initial-scale=1.0">
+    <title>zigzag_grid</title>
+    <style>
+        #main{
+            
+            width: 60%;
+            height: 600px;
+            margin: auto;
+            margin-top: 100px;
+            display: grid;
+            gap: 30px;
+            grid-template-areas: 
+               "one two two three"
+               "four four five six"
+               "seven eight nine nine"
+            
+            ;
+
+        }
+        #main>div{
+          
+            border-radius: 5px;
+            background-color: rgb(31, 162, 90);
+        }
+        #main>div:first-child{
+            grid-area: one;
+        }
+        #main>div:nth-child(2){
+            grid-area: two;
+        }
+        #main>div:nth-child(3){
+            grid-area: three;
+        }
+        #main>div:nth-child(4){
+            grid-area: four;
+        }
+        #main>div:nth-child(5){
+            grid-area: five;
+        }
+        #main>div:nth-child(6){
+            grid-area: six;
+        }
+        #main>div:nth-child(7){
+            grid-area: seven;
+        }
+        #main>div:nth-child(8){
+            grid-area: eight;
+        }
+        #main>div:nth-child(9){
+            grid-area: nine;
+        }
+
+    </style>
+</head>
+<body>
+    <div id="main">
+           <div></div>
+           <div></div>
+           <div></div>
+           <div></div>
+           <div></div>
+           <div></div>
+           <div></div>
+           <div></div>
+           <div></div>
+    </div>
+</body>
+</html>
